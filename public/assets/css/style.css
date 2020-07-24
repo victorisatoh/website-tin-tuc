@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6{font-family:'Helvetica Neue',sans-serif}
 h2{line-height:23px}
 img{border:none}
 img:hover{opacity:0.75}
-.img-center{display:block; margin-left:auto; margin-right:auto; text-align:center}
+.img-center{display:block; margin-left:auto; margin-right:auto; text-align:center; max-width:100%; width:320px; height:213px; margin-top: 15px;}
 .img-right{display:block; margin-left:auto}
 .img-left{display:block; margin-right:auto}
 .yellow_bg{background-color:#ffd62c}
