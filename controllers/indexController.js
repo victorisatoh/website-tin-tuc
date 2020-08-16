@@ -46,11 +46,11 @@ indexController.showHomePage = async (req, res) => {
 indexController.showContactPage = async (req, res) => {
   try {
     const categories = await CategoryModel.getAllCategories();
-    const tenLatestArticles = await ArticleModel.getAllArticles().limit(10);
+    const fiveLatestArticles = await ArticleModel.getAllArticles().limit(5);
     res.render("default/contact", {
       title: "Liên hệ",
       categories: categories,
-      latestArticles: tenLatestArticles,
+      latestArticles: fiveLatestArticles,
     });
   } catch (e) {
     console.log(

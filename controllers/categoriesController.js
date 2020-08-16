@@ -13,7 +13,7 @@ categoriesController.showCategoryPage = async (req, res) => {
       category.title
     );
     const categories = await CategoryModel.getAllCategories();
-    const tenLatestArticles = await ArticleModel.getAllArticles().limit(10);
+    const tenLatestArticles = await ArticleModel.getAllArticles().limit(5);
 
     if (articles) {
       res.render("default/category", {
